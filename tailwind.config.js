@@ -30,7 +30,7 @@ module.exports = {
         footerBottom: "#131A22",
       },
       boxShadow: {
-        testShadow: "0px 0px 32px 1px rgba(199,199, 199,1)",
+        textShadow: "0px 0px 32px 1px rgba(199,199, 199,1)",
         amazonInput: "0 0 3px 2px rgb(228 121 17 / 50%)",
       },
     },

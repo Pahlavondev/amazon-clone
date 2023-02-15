@@ -11,7 +11,7 @@ const Header = () => {
   const [showAll, setShowAll] = useState(false);
 
   return (
-    <div className="w-full">
+    <div className="w-full sticky top-0 z-50">
       <div className="w-full bg-amazon_blue text-white px-4 py-3 flex items-center gap-4">
         {/* Image Start  */}
         <div className="headerHover">
@@ -20,7 +20,7 @@ const Header = () => {
         {/* Image End  */}
 
         {/* Deliver Start  */}
-        <div className="headerHover">
+        <div className="headerHover hidden mdl:inline-flex">
           <LocationOnIcon />
           <p className="text-sm text-lightText font-light flex flex-col">
             Deliver to{" "}
@@ -32,7 +32,7 @@ const Header = () => {
         {/* Deliver End  */}
 
         {/* Search Start  */}
-        <div className="h-10 rounded-md flex flex-grow relative">
+        <div className="h-10 rounded-md hidden lgl:flex flex-grow relative">
           <span
             onClick={() => setShowAll(!showAll)}
             className="w-14 h-full bg-gray-200 hover:bg-gray-300 border-2 cursor-pointer duration-300 text-sm text-amazon_blue font-titleFont flex items-center justify-center rounded-tl-md rounded-bl-md"
@@ -68,8 +68,10 @@ const Header = () => {
 
         {/* SignIn Start  */}
         <div className="flex flex-col items-start justify-center headerHover">
-          <p className="text-xs text-lightText font-light">Hello, sign in</p>
-          <p className="text-sm font-semibold -mt-1 text-whiteText">
+          <p className="text-sm mdl:text-xs text-white mdl:text-lightText font-light">
+            Hello, sign in
+          </p>
+          <p className="text-sm font-semibold -mt-1 text-whiteText hidden mdl:inline-flex">
             Accounts & Lists
             <span>
               <ArrowDropDownIcon />
@@ -79,7 +81,7 @@ const Header = () => {
         {/* SignIn End  */}
 
         {/* Orders Start  */}
-        <div className="flex flex-col items-start justify-center headerHover">
+        <div className="hidden lgl:flex flex-col items-start justify-center headerHover">
           <p className="text-xs text-lightText font-light">Returns</p>
           <p className="text-sm font-semibold -mt-1 text-whiteText">& Orders</p>
         </div>

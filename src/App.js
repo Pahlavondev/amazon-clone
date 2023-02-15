@@ -8,8 +8,8 @@ import {
 } from "react-router-dom";
 import Footer from "./components/footer/Footer";
 import Header from "./components/header/Header";
-// import Banner from "./components/home/Banner";
 import Home from "./pages/Home";
+import { ProductsData } from "./api/api";
 
 const Layout = () => {
   return (
@@ -25,13 +25,13 @@ function App() {
   const router = createBrowserRouter(
     createRoutesFromElements(
       <Route path="/" element={<Layout />}>
-        <Route index element={<Home />}></Route>
+        <Route index element={<Home />} loader={ProductsData}></Route>
       </Route>
     )
   );
 
   return (
-    <div className="font-bodyFont">
+    <div className="font-bodyFont bg-gray-100">
       <RouterProvider router={router}>
         {/* <Header />
         <Banner />
