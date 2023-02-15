@@ -27,11 +27,11 @@ const HeaderBottom = () => {
         >
           <MenuIcon /> All
         </li>
-        <li className="headerHover">Today's Deals</li>
-        <li className="headerHover">Customer Service</li>
-        <li className="headerHover">Gift Cards</li>
-        <li className="headerHover">Registry</li>
-        <li className="headerHover">Sell</li>
+        <li className="headerHover hidden md:inline-flex">Today's Deals</li>
+        <li className="headerHover hidden md:inline-flex">Customer Service</li>
+        <li className="headerHover hidden md:inline-flex">Gift Cards</li>
+        <li className="headerHover hidden md:inline-flex">Registry</li>
+        <li className="headerHover hidden md:inline-flex">Sell</li>
       </ul>
       {/* listItems End */}
 
@@ -44,7 +44,7 @@ const HeaderBottom = () => {
               initial={{ x: -500, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ duration: 0.5 }}
-              className="w-[350px] h-full bg-white border border-black"
+              className="w-[80%] md:w-[350px] h-full bg-white border border-black"
             >
               <div className="w-full bg-amazon_light text-white py-2 px-6 flex items-center gap-4">
                 <AccountCircleIcon />
@@ -82,7 +82,7 @@ const HeaderBottom = () => {
 
               <span
                 onClick={() => setSideBar(false)}
-                className="cursor-pointer absolute top-0 left-[360px] w-10 h-10 text-black flex items-center justify-center border bg-gray-200 hover:bg-red-500 hover:text-white duration-300"
+                className="cursor-pointer absolute top-0 left-[82%] md:left-[360px] w-10 h-10 text-black flex items-center justify-center border bg-gray-200 hover:bg-red-500 hover:text-white duration-300"
               >
                 <CloseIcon />
               </span>
