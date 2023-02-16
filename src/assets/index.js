@@ -5,6 +5,7 @@ import bannerImgThree from "./banner/bannerImgThree.jpg";
 import bannerImgFour from "./banner/bannerImgFour.jpg";
 import bannerImgFive from "./banner/bannerImgFive.jpg";
 import uzbFlag from "./uzbekistan-flag.webp";
+import emptyCart from "./emptyCart.png";
 
 export {
   logo,
@@ -14,4 +15,5 @@ export {
   bannerImgFour,
   bannerImgFive,
   uzbFlag,
+  emptyCart,
 };
